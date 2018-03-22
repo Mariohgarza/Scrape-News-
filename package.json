@@ -1,0 +1,30 @@
+{
+  "name": "mongoose_skeleton",
+  "version": "1.0.0",
+  "description": "To scrape from a webpage all the information by using tecnologies like mongo cheerio request and more node js packages !",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "author": "Mario Garza",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.1",
+    "mongoose": "^4.12.0",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mariohgarza/Scrape-News-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mariohgarza/Scrape-News-/issues"
+  },
+  "homepage": "https://github.com/Mariohgarza/Scrape-News-#readme"
+}
