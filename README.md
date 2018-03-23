@@ -4,8 +4,8 @@
 Check out this video for a quick demo ..
 
 
-<<<<<<< HEAD
-=======
+
+
 
 
 >>>>>>> b47478acec8e054b6cc3830aa071d8ee09dd2d1f
