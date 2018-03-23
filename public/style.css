@@ -2,8 +2,8 @@
    background-image:url("./images/news.jpg");
    height:400px;
    width:100%;
-   background-size:cover;
-   opacity:.7;
+   margin-right:0;
+   opacity:.6;
  }
 
 
@@ -11,14 +11,33 @@
   }
 
   h1 {
-    font-size: 90px;
+    font-size: 80px;
     font-style: oblique;
     text-align: center;
     font-weight: 900;
     margin-top: 0;
-    padding-top: 130px;
+  padding-top: 10px;
+    background-color: lightgrey;
   }
+  h2 {
+  font-size: 30px;
+  font-style:normal;
+  text-align: center;
+  font-weight: 900;
+  margin-top: 0;
+  padding-top:40px;
 
+}
+h3{
+  font-size: 30px;
+  font-style:normal;
+  text-align: center;
+  font-weight: 900;
+  margin-top: 0;
+  text-align: center;
+  padding-top:40px;
+   opacity:.6;
+}
   #wrapper {
     width: 960px;
     margin-left: auto;
@@ -43,7 +62,12 @@
   .link {
     font-size: 18px;
   }
-
+  .deleteX {
+    margin-left: 20px;
+    color: red;
+    cursor: pointer;
+    text-align: right;
+  }
   textarea, input {
     display: block;
     width: 100%;
