@@ -21,11 +21,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 
-mongoose.Promise = Promise;
-mongoose.connect("mongodb://localhost/Scrape", {
-  useMongoClient: true
-});
-
+// // mongoose.Promise = Promise;
+// // mongoose.connect("mongodb://localhost/Scrape", {
+// //   useMongoClient: true
+// });
+var databaseUri ='mongodb://localhost/Scrape';
+if (process.env.MONGODB_URI) {
+  mongoose.connect(process.env.MONGODB_URI);
+} else {
+  mongoose.connect(databaseUri);
+}
 // Routes
 
 app.get("/Scrape", function(req, res) {
