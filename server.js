@@ -25,12 +25,17 @@ app.use(express.static("public"));
 // // mongoose.connect("mongodb://localhost/Scrape", {
 // //   useMongoClient: true
 // });
-var databaseUri ='mongodb://localhost/Scrape';
-if (process.env.MONGODB_URI) {
-  mongoose.connect(process.env.MONGODB_URI);
-} else {
-  mongoose.connect(databaseUri);
-}
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/Scrape";
+
+// Connect to the Mongo DB
+mongoose.connect(MONGODB_URI);
+
+// var databaseUri ='mongodb://localhost/Scrape';
+// if (process.env.MONGODB_URI) {
+//   mongoose.connect(process.env.MONGODB_URI);
+// } else {
+//   mongoose.connect(databaseUri);
+// }
 // Routes
 
 app.get("/Scrape", function(req, res) {
